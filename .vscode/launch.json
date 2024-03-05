@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Flask (swagger_server)",
+            "type": "python",
+            "request": "launch",
+            "module": "swagger_server",
+            "env": {
+                "FLASK_APP": "swagger_server",
+                "FLASK_ENV": "development"
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload"
+            ],
+            "jinja": true
+        }
+    ]
+}
