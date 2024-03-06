@@ -1,7 +1,7 @@
 version: '3'
 services:
   student_service:
-    image: 46817a8b1ba1
+    image: maxmb15/student_service:latest
     restart: unless-stopped
     depends_on:
       - mongo
