@@ -3,7 +3,7 @@ import six
 
 from swagger_server.models.student import Student  # noqa: E501
 from swagger_server import util
-from swagger_server.service.student_service import *
+from swagger_server.service.student_service_tiny import *
 
 
 def add_student(body=None):  # noqa: E501
