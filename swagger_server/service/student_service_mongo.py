@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 
-MONGODB_HOST = 'localhost'
+MONGODB_HOST = 'mongo'
 MONGODB_PORT = 27017
 DB_NAME = 'student_db'
 COLLECTION_NAME = 'student'
