@@ -1,11 +1,10 @@
 from pymongo import MongoClient
 
-MONGODB_HOST = 'localhost'
-MONGODB_PORT = 27017
 DB_NAME = 'student_db'
 COLLECTION_NAME = 'student'
 
-client = MongoClient(MONGODB_HOST, MONGODB_PORT)
+
+client = MongoClient('mongodb://mongo:27017/')
 db = client[DB_NAME]
 collection = db[COLLECTION_NAME]
 
