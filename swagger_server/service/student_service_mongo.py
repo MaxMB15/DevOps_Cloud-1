@@ -32,7 +32,7 @@ def add(student=None):
     student_data = {
         'first_name': encoded_data['first_name'],
         'last_name': encoded_data['last_name'],
-        'gradeRecords': [] if encoded_data['grade_records'] is None else encoded_data['grade_records'],
+        'grade_records': encoded_data['grade_records'],
     }
     student_data['_id'] = get_next_student_id()
     res = collection.insert_one(student_data)
@@ -49,7 +49,7 @@ def get_by_id(student_id=None, subject=None):
         'student_id': int(student_id),
         'first_name': doc['first_name'],
         'last_name': doc['last_name'],
-        'gradeRecords': doc['gradeRecords'],
+        'grade_records': doc['grade_records'],
     }
 
 
