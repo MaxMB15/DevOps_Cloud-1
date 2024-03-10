@@ -109,7 +109,7 @@ components:
           type: string
         last_name:
           type: string
-        gradeRecords:
+        grade_records:
           type: array
           items:
             $ref: '#/components/schemas/GradeRecord'
@@ -117,7 +117,7 @@ components:
         student_id: 123456789
         first_name: Max
         last_name: Boksem
-        gradeRecords:
+        grade_records:
         - subject_name: DevOps
           grade: 9.5
         - subject_name: Cloud
